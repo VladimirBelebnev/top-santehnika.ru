@@ -1,0 +1,636 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:regular,500,600,700,italic,500italic,600italic,700italic); 
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700);
+
+body {
+    font-family: 'Arimo',sans-serif;
+    color: #2A2A2A;
+}
+
+.container {
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.collection-section {
+    margin-top: 30px;
+}
+
+.collection-header {
+    font-family: 'Monserat Subrayada',sans-serif;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 26px;
+    color: #404040;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.collection-grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.collection-sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.collection-slider {
+    width: 100%;
+    height: 500px;
+}
+
+.collection-slide {
+    object-fit: cover;
+}
+
+.collection-thumb {
+    margin: 0;
+}
+
+.collection-thumb-slide {
+    height: 80px;
+    border-radius: 2px;
+    border: none;
+    transition: border 0.3s ease-in-out;
+}
+
+.collection-thumb-slide {
+    cursor: pointer;
+}
+
+.collection-thumb-slide.swiper-slide-thumb-active {
+    border: 1.2px solid #F02C37;
+}
+
+.collection-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection-logo {
+    max-width: 95px;
+    width: 100%;
+}
+
+.collection-country {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.collection-row {
+    display: flex;
+    gap: 50px;
+    font-size: 14px;
+}
+
+.collection-row span:first-child {
+    max-width: 145px;
+    width: 100%;
+}
+
+.collection-row span:last-child {
+    max-width: 100%;
+}
+
+.collection-row a {
+    color: #2B7DC0;
+}
+
+.collection-price-wrap {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collection-price {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #404040;
+}
+
+.collection-btn {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #F02C37;
+    border-radius: 5px;
+    padding: 10px 30px;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.collection-btn:hover {
+    opacity: .85;
+}
+
+.collection-line {
+    margin: 25px 0;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: #EEEEEE;
+}
+
+.collection-param {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.collection-param span {
+    line-height: 150%;
+}
+
+.collection-param .collection-row span:first-child {
+    color: #666666;
+}
+
+.collection-pagination {
+    display: none;
+}
+
+.collection-catalog {
+    /* Убрать */
+    margin: 25px 0; 
+}
+
+.collection-catalog-filter {
+    background: #EEEEEE;
+}
+
+.collection-catalog-grid {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    gap: 30px;
+}
+
+.collection-catalog-header {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.collection-catalog-title {
+    font-family: 'Monserat Subrayada',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 26px;
+    line-height: 150%;
+    color: #404040;
+}
+
+.collection-catalog-amount {
+    font-family: 'Monserat Subrayada',sans-serif;
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #999999;
+}
+
+.collection-catalog-tabs {
+    display: flex;
+    margin-top: 25px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.collection-catalog-btn {
+    font-family: 'Monserat Subrayada',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #2A2A2A;
+    padding: 15px 20px;
+}
+
+.collection-catalog-btn span {
+    font-weight: 400;
+}
+
+.collection-catalog-btn.active {
+    background: #FAFAFA;
+    border-radius: 5px 5px 0px 0px;
+    font-weight: 600;
+}
+
+.collection-catalog-items {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.collection-catalog-item {
+    border-top: 1px solid #EEEEEE;
+}
+
+.collection-catalog-wrap {
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 5px;
+    padding: 15px;
+    box-shadow: none;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.collection-catalog-wrap:hover {
+    box-shadow: 0px 6px 12px rgba(42, 42, 42, 0.1);
+}
+
+.collection-catalog-name {
+    display: flex;
+    gap: 4px;
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: 16px;
+    color: #2A2A2A;
+}
+
+.collection-catalog-country {
+    margin-top: 10px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2A2A2A;
+}
+
+.collection-catalog-company {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.collection-catalog-company span:first-child {
+    color: #999999;
+}
+
+.collection-catalog-picture {
+    width: 100%;
+    height: 200px;
+    margin: 15px 0;
+    object-fit: cover;
+}
+
+.collection-catalog-price {
+    font-weight: 400;
+    font-size: 22px;
+    color: #2A2A2A;
+}
+
+.collection-catalog-size {
+    font-size: 14px;
+    color: #2A2A2A;
+    margin-top: 12px;
+}
+
+.collection-catalog-size span:first-child {
+    color: #999999;
+}
+
+.collection-catalog-preview {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.collection-catalog-more {
+    font-weight: 700;
+    font-size: 14px;
+    color: #2B7DC0;
+}
+
+.collection-catalog-all {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-weight: 400;
+    color: #2A2A2A;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+}
+.collection-catalog-all:hover {
+    opacity: .75;
+}
+
+.collection-catalog-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection-catalog-pagination {
+    display: flex;
+    gap: 20px;
+}
+
+.collection-catalog-pagination a {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8F8F8F;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.collection-catalog-pagination a:hover {
+    opacity: .75;
+}
+
+.collection-catalog-pagination a.pagination-btn {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    color: #2A2A2A;
+}
+
+.collection-catalog-pagination a.pagination-active {
+    color: #2B7DC0;
+    font-weight: 700;
+}
+
+.collection-catalog-filter-btn-wrap {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collection-catalog-filter-btn {
+    display: none;
+    font-weight: 700;
+    background: #2B7DC0;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+}
+
+.collection-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 42, 42, .5)
+}
+
+.collection-modal-dialog {
+    max-width: 670px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 40px auto 0;
+}
+
+.collection-modal-content {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.collection-modal-close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.collection-modal .collection-catalog-name {
+    font-size: 22px;
+}
+
+.collection-modal .collection-catalog-country {
+    margin-top: 15px;
+}
+
+.collection-modal .collection-catalog-company {
+    margin-top: 12px;
+}
+
+.collection-modal .collection-catalog-picture {
+    height: 380px;
+    margin: 25px 0;
+}
+
+.collection-modal .collection-catalog-subtitle {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2A2A2A;
+    padding: 0;
+}
+
+.collection-modal .collection-catalog-img-wrap {
+    margin-top: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.collection-modal .collection-catalog-img-wrap img {
+    object-fit: contain;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1150px;
+    }
+    .collection-slider {
+        height: 460px;
+    }
+    .collection-grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 998px) {
+     .collection-catalog-wrap:hover {
+        box-shadow: none;
+    }
+    .collection-catalog-wrap {
+        margin: 20px 0;
+    }
+    .collection-catalog-grid {
+        grid-template-columns: 1fr;
+    }
+    .collection-catalog-filter {
+        display: none;
+    }
+    .collection-catalog-filter-btn {
+        display: block;
+    }
+    .collection-sliders {
+        position: relative;
+    }
+    .collection-pagination {
+        bottom: -15px !important;
+        right: 0;
+        left: 0;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+    }
+    .collection-pagination .swiper-pagination-bullet {
+        border-radius: 2px;
+        width: 100%;
+        height: 2px;
+        background: #999999;
+        border-radius: 0;
+    }
+    .collection-slider {
+        height: 770px;
+    }
+    .collection-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .collection-sliders {
+        gap: 10px;
+    }
+    .collection-thumb {
+        display: none;
+    }
+    .collection-price-wrap {
+        margin-top: 25px;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .collection-modal .collection-catalog-name {
+        font-size: 18px;
+    }
+    .collection-modal .collection-catalog-country {
+        margin-top: 10px;
+    }
+    .collection-modal .collection-catalog-company {
+        margin-top: 10px;
+    }
+    .collection-modal .collection-catalog-picture {
+        height: 280px;
+        margin: 20px 0;
+    }
+    .collection-modal .collection-catalog-subtitle {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    .collection-modal-content {
+        padding: 30px;
+    }
+    .collection-catalog-preview {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .collection-catalog-items {
+        grid-template-columns: 1fr 1fr;
+    }
+    .collection-catalog-amount {
+        padding-top: 5px;
+    }
+    .collection-catalog-title {
+        font-size: 22px;
+    }
+    .collection-pagination {
+        gap: 7px;
+    }
+    .collection-slider {
+        height: 580px;
+    }
+    .collection-grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 580px) {
+    .collection-modal-content {
+        padding: 20px;
+    }
+    .collection-catalog-all {
+        padding: 8px 0;
+    }
+    .collection-catalog-pagination a.pagination-btn {
+        gap: 0px;
+    }
+    .collection-catalog-pagination a.pagination-btn span {
+        display: none;
+    }
+    .collection-catalog-preview {
+        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .collection-catalog-btn span {
+        font-size: 14px;
+    }
+    .collection-catalog-items {
+        grid-template-columns: 1fr;
+    }
+    .collection-pagination {
+        gap: 5px;
+    }
+    .collection-row {
+        gap: 30px;
+    }
+    .collection-slider {
+        height: 410px;
+    }
+}
+
+@media (max-width: 480px) {
+    .collection-catalog-pagination {
+        gap: 15px;
+    }
+    .collection-price-wrap {
+        gap: 0;
+        justify-content: space-between;
+    }
+    .collection-row {
+        gap: 20px;
+    }
+    .collection-logo {
+        max-width: 78px;
+    }
+    .collection-price {
+        font-size: 20px;
+    }
+    .collection-row span:first-child {
+        max-width: 130px;
+        min-width: 130px;
+    }
+    .collection-btn {
+        padding: 10px 25px;
+    }
+    .collection-slider {
+        height: 380px;
+    }
+}
